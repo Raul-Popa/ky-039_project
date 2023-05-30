@@ -86,7 +86,7 @@ if __name__ == '__main__':
                 rate[9] = IBI
                 runningTotal += rate[9]
                 runningTotal /= 10
-                BPM = 6000/runningTotal
+                BPM = 60000/runningTotal
                 print ('BPM: {}'.format(BPM))
         if Signal < thresh and Pulse == True :
             GPIO.output(LED_MONITOR_PIN, GPIO.LOW)
